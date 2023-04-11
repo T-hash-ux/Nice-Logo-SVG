@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const { Square, Triangle, Circle, LogoRenderer} = require('./lib/shapes');
 const fs = require('fs');
-
+// Set up the user prompt questions for input.
 
 const questions = [
     {
