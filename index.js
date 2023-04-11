@@ -28,3 +28,11 @@ const questions = [
         message: 'Enter a color for your shape',
     },
 ];
+
+inquirer.prompt(questions).then(({colorText, colorShape, text, shape}) => {
+    const shapeInstance = {
+        Square: new Square(colorText, colorShape, text),
+        Triangle: new Triangle(colorText, colorShape, text),
+        Circle: new Circle(colorText, colorShape, text),
+    }[shape];
+})
