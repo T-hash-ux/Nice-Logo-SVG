@@ -40,7 +40,7 @@ inquirer.prompt(questions).then(({colorText, colorShape, text, shape}) => {
     logoRenderer.putText(colorText, text);
     logoRenderer.putShape(shapeInstance);
 
-    const svg = logoRenderer.renederLogo();
+    const svg = logoRenderer.renderLogo();
     fs.writeFileSync('./examples/logo.svg', svg);
     console.log('Generated logo.svg');
 });
