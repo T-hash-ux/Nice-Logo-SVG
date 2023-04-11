@@ -35,4 +35,12 @@ inquirer.prompt(questions).then(({colorText, colorShape, text, shape}) => {
         Triangle: new Triangle(colorText, colorShape, text),
         Circle: new Circle(colorText, colorShape, text),
     }[shape];
-})
+
+    const logoRenderer = new LogoRenderer();
+    logoRenderer.putText(colorText, text);
+    logoRenderer.putShape(shapeInstance);
+
+    const svg = logoRenderer.renederLogo();
+    fs.writeFileSync('./examples/logo.svg', svg);
+    console.log('Generated logo.svg');
+});
