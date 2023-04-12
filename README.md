@@ -18,5 +18,9 @@ The app presents the user with a prompt to input the text, shape, and color and 
 - Matthew Lomard
 - Isaiah Galarza
 
+Walkthrough video:
+
+https://drive.google.com/file/d/1Vhv_bbksxylQf7klKX7rZps4p_knrzpx/view
+
 ## License 
 MIT license
